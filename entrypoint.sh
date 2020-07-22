@@ -6,4 +6,8 @@ if [ $# -eq 0 ]
       exit 2
 fi
 
+if [ $1 == "SLEEP" ]; then
+    sleep 240h
+fi
+
 /usr/bin/patroni $1
